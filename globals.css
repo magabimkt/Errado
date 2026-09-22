@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* paleta — modo claro */
+  --color-paper: 243 244 240;
+  --color-ink: 27 39 51;
+  --color-ink-muted: 91 103 116;
+  --color-teal: 15 107 100;
+  --color-teal-light: 228 239 237;
+  --color-teal-dark: 12 83 78;
+  --color-ochre: 184 134 47;
+  --color-ochre-light: 245 235 216;
+  --color-brick: 162 59 46;
+  --color-brick-light: 245 228 225;
+  --color-line: 222 220 211;
+}
+
+.dark {
+  /* paleta — modo escuro */
+  --color-paper: 21 25 28;
+  --color-ink: 231 233 228;
+  --color-ink-muted: 154 165 173;
+  --color-teal: 41 166 154;
+  --color-teal-light: 15 63 59;
+  --color-teal-dark: 29 132 120;
+  --color-ochre: 217 169 74;
+  --color-ochre-light: 58 46 18;
+  --color-brick: 214 92 75;
+  --color-brick-light: 58 29 24;
+  --color-line: 42 47 51;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+  }
+
+  /* foco visível para navegação por teclado — requisito de acessibilidade do projeto */
+  :focus-visible {
+    outline: 2px solid rgb(var(--color-teal));
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: rgb(var(--color-teal-light));
+    color: rgb(var(--color-ink));
+  }
+}
+
+@layer components {
+  .prose-lesson {
+    @apply prose max-w-content prose-headings:font-display prose-headings:text-ink
+      prose-p:text-ink prose-strong:text-ink prose-a:text-teal
+      dark:prose-invert;
+  }
+}

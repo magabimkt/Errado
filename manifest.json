@@ -1,0 +1,53 @@
+{
+  "name": "Plataforma ACA IBGE 2026 — Preparação para o Concurso",
+  "short_name": "ACA IBGE",
+  "description": "Plataforma de estudos para o Processo Seletivo Simplificado do IBGE — Edital nº 01/2026, cargo Agente Censitário Administrativo.",
+  "start_url": "/",
+  "id": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F3F4F0",
+  "theme_color": "#0F6B64",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Simulado rápido",
+      "short_name": "Simulado",
+      "url": "/simulados",
+      "description": "Iniciar um simulado cronometrado"
+    },
+    {
+      "name": "Revisão do dia",
+      "short_name": "Revisão",
+      "url": "/revisoes",
+      "description": "Ver flashcards e questões pendentes de revisão"
+    }
+  ]
+}
