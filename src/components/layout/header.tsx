@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { href: "/disciplinas", label: "Disciplinas" },
   { href: "/questoes", label: "Questões" },
   { href: "/flashcards", label: "Flashcards" },
+  { href: "/jogos", label: "Jogos" },
   { href: "/simulados", label: "Simulados" },
   { href: "/estatisticas", label: "Estatísticas" },
   { href: "/revisoes", label: "Revisões" },
